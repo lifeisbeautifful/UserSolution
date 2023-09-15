@@ -12,6 +12,15 @@
         {
             Age = age;
         }
-        
+
+        public override string ToString()
+        {
+            return Age < 10 ? $"Hi, my name is {FirstName} and last name {Lastname}." +
+                              $"I am baby. I am {Gender}." 
+                            :
+                              $"Hi, my name is {FirstName} and last name {Lastname}." +
+                              $"I am {Age} years old. I am {Gender}.";
+
+        }
     }
 }
